@@ -17,7 +17,7 @@ class CreateTableDaftarBarang extends Migration
             $table->id();
             $table->integer('id_supplier');
             $table->string('nama_barang');
-            $table->string('stok');
+            $table->integer('stok');
             $table->string('harga');
             $table->timestamps();
         });

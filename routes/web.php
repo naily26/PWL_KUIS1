@@ -6,7 +6,7 @@ use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\PostController;
-
+use App\Http\Controllers\PelangganController;
 
 
 /*
@@ -55,3 +55,6 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/post', [PostController::class, 'index']);
 Route::get('/about', [AboutController::class, 'index']);
 Route::get('/contact', [contactController::class, 'index']);
+
+//kuis
+Route::get('/daftarpelanggan', [PelangganController::class, 'index']);
