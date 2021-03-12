@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PelangganController;
+use App\Http\Controllers\BarangController;
 
 
 /*
@@ -58,3 +59,4 @@ Route::get('/contact', [contactController::class, 'index']);
 
 //kuis
 Route::get('/daftarpelanggan', [PelangganController::class, 'index']);
+Route::get('/daftarbarang', [BarangController::class, 'index']);

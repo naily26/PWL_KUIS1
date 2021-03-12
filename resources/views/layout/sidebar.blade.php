@@ -20,7 +20,7 @@
                         <i class="far fa-comments"></i>
                         Daftar Pegawai
                     </a></li>
-                    <li class="tm-nav-item"><a href="{{ url('contact')}}" class="tm-nav-link">
+                    <li class="tm-nav-item"><a href="{{ url('daftarbarang')}}" class="tm-nav-link">
                         <i class="far fa-comments"></i>
                         Daftar Barang
                     </a></li>

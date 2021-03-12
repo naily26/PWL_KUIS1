@@ -20,9 +20,12 @@ class DatabaseSeeder extends Seeder
         // Blog::factory(100)->create();
         // $this->call([KategoriSeed::class]);
         // $this->call([AboutSeed::class]);
-        $this->call([DaftarBarangSeed::class]);
-        DaftarBarang::factory(100)->create();
-        $this->call([DaftarPelangganSeed::class]);
-        DaftarPelanggan::factory(100)->create();
+        // $this->call([DaftarBarangSeed::class]);
+        // DaftarBarang::factory(100)->create();
+        // $this->call([DaftarPelangganSeed::class]);
+        // DaftarPelanggan::factory(100)->create();
+        //update isi gambar pada table barang
+        // $this->call([UpdateGambarBarang::class]);
+        $this->call([SupplierSeed::class]);
     }
 }
