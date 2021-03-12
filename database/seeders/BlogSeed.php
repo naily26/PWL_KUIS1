@@ -14,7 +14,7 @@ class BlogSeed extends Seeder
      */
     public function run()
     {
-        DB::table('table_blog')->insert(
+        DB::table('table_blog')->insert( // insert / data baru
             [
             'gambar'=>'img/img-01.jpg',
             'judul'=>'Simple and useful HTML layout',

@@ -16,7 +16,7 @@ class SupplierSeed extends Seeder
         DB::table('table_supplier')->insert(
             [
                 'nama_supplier'=>'LN Hijab',
-                'alamat_supplier'=>'Malang',
+                'alamat_supplier'=>'Jl. Ketimang Tengah no.32 kab. Pasuruan',
                 'jenis'=>'fashion',
                 'no_hp_supplier'=>'087965890765'
             ]

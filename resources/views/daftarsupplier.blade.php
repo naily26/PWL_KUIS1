@@ -3,41 +3,67 @@
 <!DOCTYPE html>
 
 <style>
-    .table-barang {
-   border: 1px solid darken($baseColor, 5%);
-   border-radius: $borderRadius;
-   box-shadow: 3px 3px 0 rgba(0,0,0,0.1);
-   max-width: calc(100% - 2em);
-   margin: 1em auto;
-   overflow: hidden;
-   width: 800px;
-   border: none; 
-   box-shadow: none;
-   overflow: visible;
-}
-#main_table {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    borderRadius: 10px;
-  }
-  
-  #main_table td, #main_table th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  #main_table tr:nth-child(even){background-color: #f2f2f2;}
-  
-  #main_table tr:hover {background-color: #ddd;}
-  
-  #main_table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #0CC;
-    color: white;
-  }
+    div .table-pelanggan {
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+    max-width: calc(100% - 2em);
+    margin: 1em auto;
+    overflow: hidden;
+    width: 800px;
+    border: none; 
+    box-shadow: none;
+    overflow: visible;
+ }
+ .header {
+       background-color: transparent;
+       color: white;
+       font-size: 2em;
+       font-weight: 700;
+       padding: 0;
+       text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+       background-color: #0CC;
+       color: white;
+       font-size: 1.5em;
+       padding: 1rem;
+       text-align: center;
+       text-transform: uppercase;
+       border-radius: 10px 10px 0 0;  
+    }
+ #main_table {
+     font-family: Arial, Helvetica, sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+   }
+   #main_table tr th{
+    text-align: center;
+   }
+   
+   #main_table td, #main_table th {
+     border: 1px solid #ddd;
+     padding: 8px;
+     text-align: center;
+   }
+   
+   #main_table tr:nth-child(even){background-color: #f2f2f2;}
+   
+   #main_table tr:hover {background-color: #ddd;}
+   
+   #main_table th {
+     padding-top: 12px;
+     padding-bottom: 12px;
+     text-align: left;
+     background-color: #ddd;
+     opacity: 0.4;
+     color: black;
+   }
+   #main_table .gambarproduk{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    border: 3px solid;
+    border-color: transparent;
+    margin: 0.5rem 0;
+   }
     </style>
     <div class="container-fluid">
         <main class="tm-main">
@@ -62,7 +88,7 @@
                             <th>Nama Supplier</th>
                             <th>Jenis Supplier</th>
                             <th>No Hp</th>
-                            <th>Alamat</th>
+                            <th>Alamat Supplier</th>
                         </tr>
                     </thead>
                     <tbody>

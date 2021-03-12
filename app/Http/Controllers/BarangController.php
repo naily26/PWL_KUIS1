@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Barang;
+use App\Models\DaftarBarang;
 
 use Illuminate\Http\Request;
 
@@ -19,9 +19,17 @@ class BarangController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
+    //instansiasi model => query builder not elequent
+    public function model()
+    {
+        $data = new DaftarBarang();
+        return $data;
+    }
+
     public function index()
     {
-        $data = Barang::all();
-        return view('about',compact('data'));
+        $data = $this->model()->dataBarang();
+        return view('daftarbarang',compact('data'));
     }
 }

@@ -21,7 +21,7 @@ class PelangganController extends Controller
      */
     public function index()
     {
-        $data =DaftarPelanggan::paginate(10);
+        $data = DaftarPelanggan::paginate(10);
         return view('daftarpelanggan',compact('data'));
     }
 }

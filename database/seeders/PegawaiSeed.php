@@ -18,7 +18,7 @@ class PegawaiSeed extends Seeder
             'nama_pegawai'=>'Naily Ikmalul Insiyah',
             'jabatan'=>'staf',
             'no_hp_pegawai'=>'081234567911',
-            'alamat_pegawai'=>'Malang'
+            'alamat_pegawai'=>'Jl. Ketimang Tengah no.32 kab. Pasuruan'
             ]
             );
     }

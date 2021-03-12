@@ -9,6 +9,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\SupplierController;
+use App\Http\Controllers\BarangController;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,3 +62,5 @@ Route::get('/contact', [contactController::class, 'index']);
 Route::get('/daftarpelanggan', [PelangganController::class, 'index']);
 Route::get('/daftarpegawai', [PegawaiController::class, 'index']);
 Route::get('/daftarsupplier', [SupplierController::class, 'index']);
+Route::get('/daftarbarang', [BarangController::class, 'index']);
+
