@@ -7,7 +7,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PelangganController;
-
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\SupplierController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,3 +59,5 @@ Route::get('/contact', [contactController::class, 'index']);
 
 //kuis
 Route::get('/daftarpelanggan', [PelangganController::class, 'index']);
+Route::get('/daftarpegawai', [PegawaiController::class, 'index']);
+Route::get('/daftarsupplier', [SupplierController::class, 'index']);

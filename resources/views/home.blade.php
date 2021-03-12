@@ -17,7 +17,7 @@
                 </div>                
             </div>            
             <div class="row tm-row">
-                @for($i = 0; $i<count($arr); $i++)
+                @for ($i = 0; $i<count($arr); $i++)
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
                     <a href="post.html" class="effect-lily tm-post-link tm-pt-60">
